@@ -1,0 +1,21 @@
+.mainPage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #091923 20.66%, rgba(9, 25, 35, 0.76) 46.15%, rgba(9, 25, 35, 0) 94.69%);
+  .page{
+    max-width: 1440px;
+    padding: 0 0 0 150px;
+    flex: 1;
+    // margin: 0 auto;
+    @media (max-width: 880px) {
+      padding: 0 50px;
+    }
+    @media (max-width: 600px) {
+      padding: 0px;
+    }
+    @media (max-width: 500px) {
+      margin: 0;
+    }
+  }
+}

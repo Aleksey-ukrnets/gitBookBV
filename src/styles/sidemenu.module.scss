@@ -1,0 +1,31 @@
+.main {
+    position: fixed;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    border-right: 1px solid #16242C;
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 16px;
+        .logo {
+            margin: 11px 0 270px 0;
+            width: 76px;
+            height: 68px;
+        }
+        .linkList{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .link {
+            margin-top: 30px;
+            &:first-child {
+                margin: 0;
+            }
+        }
+    }
+}
