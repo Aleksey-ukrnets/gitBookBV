@@ -12,11 +12,11 @@ export default function Main() {
   return (
     <div className='mainPage'>
       <Header /> 
-      
       <div className='page'>
         <SideMenu/>
         <Outlet />
       </div>
+      
       <Footer />
     </div>
   )
