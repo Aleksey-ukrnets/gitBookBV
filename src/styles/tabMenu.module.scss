@@ -1,0 +1,39 @@
+.tabContainer {
+  margin-top: 100px;
+  .blockTitle {
+    display: flex;
+    align-items: center;
+    .title {
+      font-family: 'Changa One';
+      font-style: italic;
+      font-weight: 400;
+      font-size: 45px;
+      line-height: 48px;
+      text-transform: uppercase;
+      background: linear-gradient(180deg, #ffffff 0%, #92b7ff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      margin: 0 0 0 30px;
+    }
+  }
+  .tabs {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    border-bottom: 1px solid #14222A;
+    .tab {
+      font-family: 'Rubik';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 120%;
+      color: #7b9bac;
+      padding: 20px 30px;
+      margin-bottom: -1px;
+      cursor: pointer;
+      
+    }
+  }
+}

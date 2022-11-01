@@ -12,10 +12,8 @@ export default function Faq() {
   const [clicked, setClicked] = useState(false);
   const toggle = (index) => {
     if (clicked === index) {
-      //if clicked question is already active, then close it
       return setClicked(null);
     }
-
     setClicked(index);
   };
   return (
@@ -30,7 +28,6 @@ export default function Faq() {
                   post={post}
                   key={index}
                   clicked={clicked}
-                  setClicked={setClicked}
                   toggle={toggle}
                   index={index}
                 />
