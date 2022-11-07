@@ -7,8 +7,8 @@ export default function Footer() {
       <div className={css.columns}>
         <h1 className={css.title}>Copyright © 2021. All Rights Reserved by BVGAME Limited</h1>
         <div className={css.colSec}>
-          <p className={css.desc}>Legal Notice & Disclaimers</p>
-          <p className={css.desc}>Privacy policy</p>
+          <a href='https://battleverse.io/legal_notice' target={'_blank'} rel='noreferrer' className={css.desc}>Legal Notice & Disclaimers</a>
+          <a href='https://battleverse.io/privacy_policy' target={'_blank'} rel='noreferrer' className={css.desc}>Privacy policy</a>
         </div>
 
       </div>

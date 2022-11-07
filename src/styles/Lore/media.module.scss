@@ -1,8 +1,54 @@
 .media {
   margin-top: 36px;
- 
+}
+.mediaMainPage{
+  max-width: 1290px;
+  margin-top: 170px;
 }
 .wrapper {
+  padding: 0 50px 0 0;
+  @media (max-width: 880px) {
+    padding: 0 40px;
+  }
+  @media (max-width: 550px) {
+    padding: 0 20px;
+  }
+  //mainMediaPage
+  .titleBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .title {
+      font-family: 'Changa One';
+      font-style: italic;
+      font-weight: 400;
+      font-size: 45px;
+      line-height: 48px;
+      text-transform: uppercase;
+      background: linear-gradient(180deg, #ffffff 0%, #92b7ff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .rightRow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .text {
+        font-family: 'Changa One';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 16.0099px;
+        line-height: 17px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #7b9bac;
+        &:hover {
+
+        }
+      }
+    }
+  }
   .title {
     font-family: 'Rubik';
     font-style: normal;
@@ -24,7 +70,8 @@
     margin-top: 30px;
     .card {
       text-decoration: none;
-      width: calc(33.19111% - 20px);
+      width: calc(33.79111% - 20px);
+      max-width: 400px;
       position: relative;
       transition: 1s all;
       @media (max-width: 880px) {
@@ -40,12 +87,17 @@
         opacity: 1;
         visibility: visible;
       }
-      .cardTitleWrapper{
+      .cardTitleWrapper {
         position: absolute;
         bottom: 0;
         width: 100%;
         height: 200px;
-        background: linear-gradient(180.89deg, rgba(0, 0, 0, 0) 17.63%, rgba(0, 0, 0, 0.67) 67.08%, rgba(0, 0, 0, 0.76) 94.57%);;
+        background: linear-gradient(
+          180.89deg,
+          rgba(0, 0, 0, 0) 17.63%,
+          rgba(0, 0, 0, 0.67) 67.08%,
+          rgba(0, 0, 0, 0.76) 94.57%
+        );
       }
       .cardTitle {
         font-family: 'Rubik';
@@ -92,7 +144,7 @@
       .cardContent {
         position: relative;
         height: 100%;
-        height: 300px;
+        height: 350px;
         @media (max-width: 700px) {
           height: 250px;
         }

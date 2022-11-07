@@ -18,6 +18,14 @@
       padding: 0 20px 5px;
       flex-direction: column-reverse;
     }
+    .desc{
+      cursor: pointer;
+      transition: 0.3s ease;
+      &:hover {
+        color: #FFFFFF;
+        text-decoration: underline;
+      }
+    }
       .desc, .title {
       margin: 0;
       font-family: 'Montserrat';
@@ -26,9 +34,12 @@
       font-size: 14px;
       line-height: 14px;
       color: #7B9BAC;
+    
       @media (max-width: 550px) {
         margin: 12px 0 0 0;
       }
+      
+      
     }
     .colSec {
       display: flex;
