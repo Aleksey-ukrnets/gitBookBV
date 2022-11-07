@@ -6,7 +6,7 @@ import { Outlet } from 'react-router';
 
 const tabInfo = {
   title: 'Lore',
-  tabs: [{ title: 'media' }, { title: 'glossary' }, { title: 'comics' }],
+  tabs: [{ title: 'Media' }, { title: 'Glossary' }, { title: 'Comics' }],
 };
 
 export default function Lore() {

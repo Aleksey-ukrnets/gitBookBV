@@ -7,7 +7,7 @@ export default function TabMenu({ tabInfo, setTab, tab, lore }) {
   return (
     <section className={css.tabContainer}>
       <div className={css.blockTitle}>
-        <BtnGoBack />
+        <BtnGoBack  />
         <h1 className={css.title}>{tabInfo.title}</h1>
       </div>
       <div className={css.tabs}>

@@ -4,7 +4,9 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import logo from '../assets/logo_gold.png';
 import burger from '../assets/header/burger.svg';
 import cross from '../assets/header/cross.svg';
+
 import css from '../styles/header.module.scss';
+
 import telegram from '../assets/icon_telegram.svg';
 import twitter from '../assets/icon_twitter.svg';
 import linked from '../assets/linked.svg';
@@ -16,7 +18,7 @@ export default function Header() {
   const links = [
     { title: 'about', link: 'about' },
     { title: 'gameplay', link: 'gameplay' },
-    { title: 'lore', link: 'lore' },
+    { title: 'lore', link: 'lore/media' },
     { title: 'docs', link: 'docs' },
     // { title: 'FAQ', link: 'FAQ' },
   ];

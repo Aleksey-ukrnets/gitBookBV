@@ -30,6 +30,7 @@
     position: absolute;
     top: 35px;
     right: 42px;
+    cursor: pointer;
     @media (max-width: 850px) {
       display: block;
     }
@@ -41,8 +42,13 @@
     top: 11px;
     width: 76px;
     height: 68px;
+    cursor: pointer;
     @media (max-width: 1600px) {
       left: 10px;
+    }
+    @media (max-width: 425px) {
+      width: 60px;
+      height: 53px;
     }
   }
   .content {
@@ -70,6 +76,9 @@
       &:last-child {
         margin-right: 50px;
       }
+      &:hover {
+        color: #ffffff;
+      }
       @media (max-width: 850px) {
         font-size: 24px;
         line-height: 25px;
@@ -88,9 +97,7 @@
         margin: 0;
       }
      
-      &:hover {
-        color: #ffffff;
-      }
+     
     }
   }
   .footerBurger {

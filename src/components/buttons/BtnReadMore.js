@@ -14,7 +14,7 @@ export default function BtnReadMore({ handler, children, purple, className }) {
         style={{
           padding: purple && '11px 35px',
           background:
-            purple && 'linear-gradient(140deg, #6534CE 8.91%, #3C1182 90.52%)',
+            !purple && 'linear-gradient(246.26deg, #FFF38B 13.13%, #FFE600 59.92%, #FE6B00 105.41%)',
           color: purple && '#FFFFFF',
           // width: docWidth && '100%'
         }}
