@@ -15,7 +15,7 @@ export default function Glossary() {
           <GlossaryRows rowsInfo={rowsInfo} />
           <div className={css.btn}>
             <div className={css.btnPos}>
-              <BtnReadMore handler={'/lore'} purple>read more</BtnReadMore>
+              <BtnReadMore handler={'/lore/glossary'} purple>read more</BtnReadMore>
             </div>
           </div>
         </div>
