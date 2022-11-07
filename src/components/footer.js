@@ -8,7 +8,7 @@ export default function Footer() {
         <h1 className={css.title}>Copyright © 2021. All Rights Reserved by BVGAME Limited</h1>
         <div className={css.colSec}>
           <p className={css.desc}>Legal Notice & Disclaimers</p>
-        <p className={css.desc}>Privacy policy</p>
+          <p className={css.desc}>Privacy policy</p>
         </div>
 
       </div>

@@ -12,6 +12,13 @@ body {
 
 .App {
   overflow-x: hidden !important;
+  min-width: 1440px;
+  @media (max-width: 1024px) {
+    min-width: 0;
+  }
+}
+a {
+  text-decoration: none;
 }
 /* .App-logo {
   height: 40vmin;

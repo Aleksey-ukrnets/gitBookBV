@@ -5,7 +5,7 @@ import arrow from '../../assets/Arrow-left.svg';
 export default function BtnGoBack() {
   const navigate = useNavigate();
 
-  const goBack = () => navigate(-1);
+  const goBack = () => navigate('/');
   return (
     <button className={css.btnBack} onClick={goBack}>
       <div>

@@ -19,7 +19,7 @@ import Annotation from './textComponent/Annotation';
 export default function Characters() {
   return (
     <div className={css.characters}>
-      <div style={{ paddingRight: '50px' }}>
+      <div className={css.wrapper}>
         <Annotation info={infoAnnotation.worldTitle} />
         <section className={css.cards}>
           <div className={css.card}>

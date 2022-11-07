@@ -5,16 +5,15 @@ import BtnReadMore from '../buttons/BtnReadMore';
 export default function InfoCard({ el }) {
   return (
     <div className={css.card}>
+      {/* style={{backgroundImage: `url(${el.img})`}} */}
       <div className={css.cardWrapper}>
         <div className={css.cardContent}>
           <h1 className={css.title}>{el.title}</h1>
           <p className={css.description}>{el.description}</p>
-          <BtnReadMore purple>{el.btnText}</BtnReadMore>
+          <BtnReadMore handler={el.link} purple>{el.btnText}</BtnReadMore>
         </div>
       </div>
-      <div className={css.imgContainer}>
-        <img src={el.img} alt="img" />
-      </div>
+      <img className={css.imgContainer} src={el.img} alt="img" />
     </div>
   );
 }

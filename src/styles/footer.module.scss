@@ -2,12 +2,22 @@
   display: flex;
   width: 100%;
   height: 60px;
-  margin: 170px 0 0 0;
+  margin: 120px 0 0 0;
+  // @media (max-width: 600px) {
+  //  margin: 50px 0 0 0;
+  // }
   .columns {
     padding: 0 50px 0 150px;
     display: flex;
     width: 100%;
     justify-content: space-between;
+    @media (max-width: 600px) {
+      padding: 0 50px;
+    }
+    @media (max-width: 550px) {
+      padding: 0 20px 5px;
+      flex-direction: column-reverse;
+    }
       .desc, .title {
       margin: 0;
       font-family: 'Montserrat';
@@ -16,11 +26,22 @@
       font-size: 14px;
       line-height: 14px;
       color: #7B9BAC;
+      @media (max-width: 550px) {
+        margin: 12px 0 0 0;
+      }
     }
     .colSec {
       display: flex;
+      @media (max-width: 850px) {
+        flex-direction: column;
+        margin: 0;
+      }
       .desc:nth-child(2){
         margin-left: 25px;
+        @media (max-width: 850px) {
+         
+          margin: 10px 0 0 0;
+        }
       }
     }
   }

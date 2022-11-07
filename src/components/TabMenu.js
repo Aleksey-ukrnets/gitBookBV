@@ -1,8 +1,9 @@
-import React from 'react';
+import { NavLink } from 'react-router-dom';
 import css from '../styles/tabMenu.module.scss';
 import BtnGoBack from './buttons/BtnGoBack';
-export default function TabMenu({ tabInfo, setTab, tab }) {
-   
+export default function TabMenu({ tabInfo, setTab, tab, lore }) {
+  const wrapToLink = (jsx, to) => (lore ? <NavLink key={to} to={to}>{jsx}</NavLink> : jsx);
+
   return (
     <section className={css.tabContainer}>
       <div className={css.blockTitle}>
@@ -10,17 +11,20 @@ export default function TabMenu({ tabInfo, setTab, tab }) {
         <h1 className={css.title}>{tabInfo.title}</h1>
       </div>
       <div className={css.tabs}>
-        {console.log(tab)}
         {tabInfo?.tabs.map((el, index) => {
-          return (
+          return wrapToLink(
             <div
               className={css.tab}
               onClick={() => setTab(index)}
-              style={{ color: tab === index ? '#FFFFFF' : '#7B9BAC', borderBottom: tab === index && '1px solid white' }}
+              style={{
+                color: tab === index && '#FFFFFF',
+                borderBottom: tab === index && '1px solid white',
+              }}
               key={index}
             >
               {el.title}
-            </div>
+            </div>,
+            el.title
           );
         })}
       </div>

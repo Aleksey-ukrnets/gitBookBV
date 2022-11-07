@@ -1,0 +1,113 @@
+.posts {
+  margin-top: 36px;
+}
+.btnBack {
+  border: none;
+  background: none;
+  cursor: pointer;
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   @media (max-width: 425px) {
+    img {
+        width: 18px;
+    }
+   }
+    .text {
+      font-family: 'Rubik';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 27px;
+      letter-spacing: 0.02em;
+      color: #7b9bac;
+      margin: 0 0 0 12px;
+      @media (max-width: 425px) {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+.innerComics {
+    .wrapper {
+        display: flex;
+        flex-direction:column ;
+        justify-content: center;
+        align-items: center;
+    }
+  .comicsPost {
+    padding: 0 50px 0 0;
+   
+    @media (max-width: 850px){
+        padding: 0 40px;
+    }
+    @media (max-width: 550px){
+        padding: 0 20px;
+    }
+    .imgBlock {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .title {
+      font-family: 'Rubik';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 38px;
+      letter-spacing: 0.02em;
+      color: #ffffff;
+      text-align: left;
+      max-width: 600px;
+      @media (max-width: 850px) {
+        font-size: 30px;
+        line-height: 24px;
+      }
+      @media (max-width: 550px) {
+        font-size: 26px;
+      }
+    }
+    .statusPage {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 30px 0 0 0;
+      .numberPage {
+        display: flex;
+        justify-content: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        color: #ffffff;
+        margin: 0 24px;
+        @media (max-width: 550px) {
+            margin: 12px;
+            font-size: 14px;
+            line-height: 16px;
+        }
+      }
+      .btnPag {
+        width: 27px;
+        height: 27px;
+        border-radius: 50%;
+        background: #20313A;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: 0.5s all;
+        &:hover {
+            opacity: 0.9;
+            background: #2B4654;
+        }
+      }
+    }
+  }
+}

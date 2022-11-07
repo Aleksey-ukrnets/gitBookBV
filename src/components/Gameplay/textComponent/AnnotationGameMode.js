@@ -10,7 +10,7 @@ export default function AnnotationGameMode({ info }) {
           <p className={css.text}>{info.text}</p>
         </div>
       </div>
-      <img src={info.img} alt={info.title} />
+     { info.img && <img src={info.img} alt={info.title} />}
     </section>
   );
 }

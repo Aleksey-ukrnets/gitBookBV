@@ -1,10 +1,13 @@
 import React from 'react';
 
+
 import css from '../../styles/AboutPage/docs.module.scss';
+
 import BtnReadMore from '../buttons/BtnReadMore';
 import bot from '../../assets/aboutPage/bot2.png';
 import coin from '../../assets/aboutPage/coin2.png';
 export default function Docs() {
+  
   return (
     <section className={css.docsMain}>
       <div className={css.wrapper}>
@@ -24,7 +27,7 @@ export default function Docs() {
               Defence. Trick actions. Otherwise, use other terms like Skill or
               Consumable.
             </p>
-            <BtnReadMore purple>read more</BtnReadMore>
+            <BtnReadMore className={css.btn} handler={'/docs'} purple>read more</BtnReadMore>
           </div>
         </div>
       </div>

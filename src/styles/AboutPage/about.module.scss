@@ -1,47 +1,89 @@
 .sectionAbout {
-    width: 100%;
-    height: 600px;
-    position: relative;
-    .wrapper {
-        
-        .titleBlock {
-            padding-top: 125px;
-            z-index: 10;
-            position: relative;
-            .backImg {
-                position: absolute;
-                top: 0;
-                right: 0;
-                z-index: -1;
-            }
-            .title {
-                font-family: 'Dela Gothic One';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 45px;
-                line-height: 50px;
-                letter-spacing: 0.02em;
-                text-transform: uppercase;
-                text-align: left;
-                background: linear-gradient(180deg, #FFFFFF 0%, #92B7FF 100%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
-                text-fill-color: transparent;
-                max-width: 520px;   
-                margin: 0;
-            }
-            .description {
-                font-family: 'Rubik';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 20px;
-                letter-spacing: 0.02em;
-                color: #FFFFFF;
-                margin: 10px 0 25px 0;
-                width: 356px;
-            }
+  width: 100%;
+  height: 600px;
+  position: relative;
+  @media (max-width: 840px) {
+    height: auto;
+  }
+  .wrapper {
+    .titleBlock {
+      padding-top: 125px;
+      z-index: 10;
+      position: relative;
+      @media (max-width: 840px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .backImg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        @media (max-width: 1024px) {
+          right: -350px;
         }
+        @media (max-width: 840px) {
+          position: static;
+          left: 0;
+          right: 0;
+          width: 100%;
+        }
+        @media (max-width: 425px) {
+            width: 220%;
+            margin-left: 20px;
+        }
+      }
+      .title {
+        font-family: 'Dela Gothic One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 50px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        text-align: left;
+        background: linear-gradient(180deg, #ffffff 0%, #92b7ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        max-width: 520px;
+        margin: 0;
+        @media (max-width: 850px) {
+          text-align: center;
+          max-width: none;
+          padding: 0 40px;
+        }
+        @media (max-width: 425px) {
+            font-size: 30px;
+            line-height: 36px;
+            padding: 0 20px;
+        }
+      }
+      .description {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        color: #ffffff;
+        margin: 10px 0 25px 0;
+        width: 356px;
+        @media (max-width: 850px) {
+          width: 100%;
+          text-align: center;
+          margin-top: 20px;
+          max-width: 465px;
+        }
+        @media (max-width: 850px) {
+            width: auto;
+            padding: 0 20px;
+        }
+       
+      }
     }
+  }
 }

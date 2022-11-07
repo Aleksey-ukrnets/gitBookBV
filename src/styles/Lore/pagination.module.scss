@@ -1,0 +1,45 @@
+.numbersContent {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .numbersList {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0 20px;
+    .number {
+      text-decoration: none;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 26px;
+      color: #7B9BAC;
+      padding: 15px 24px;
+      border-radius: 8px;
+      cursor: pointer;
+      &:hover {
+       color: #ffffff;
+      }
+    }
+  }
+  .btnPag {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background: #20313A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s all;
+    &:hover {
+        opacity: 0.9;
+        background: #2B4654;
+    }
+  }
+}

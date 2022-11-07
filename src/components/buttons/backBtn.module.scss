@@ -4,6 +4,9 @@
   outline: none;
   border: none;
   cursor: pointer;
+  &:hover {
+    background: #13222A;
+  }
   div {
     padding: 8px 14px;
     display: flex;

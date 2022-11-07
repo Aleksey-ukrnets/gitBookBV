@@ -8,6 +8,8 @@ import littleIcon from '../../../assets/aboutPage/little_icon.png';
 import bigIcon from '../../../assets/aboutPage/big_icon.png';
 import shroomQuestion from '../../../assets/aboutPage/shroomQuestion.png';
 
+
+
 export default function Faq() {
   const [clicked, setClicked] = useState(false);
   const toggle = (index) => {
