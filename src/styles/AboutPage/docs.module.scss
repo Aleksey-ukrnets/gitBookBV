@@ -1,6 +1,7 @@
 .docsMain {
   margin: 175px 0 0 0;
   height: 530px;
+  max-width: 1290px;
   @media (max-width: 980px) {
     height: auto;
   }
@@ -17,7 +18,7 @@
       box-sizing: border-box;
       flex-direction: column;
     }
-    @media (max-width: 980px) {
+    @media (max-width: 880px) {
       padding: 0 40px;
     }
     @media (max-width: 425px) {
