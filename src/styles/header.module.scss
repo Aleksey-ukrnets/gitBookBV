@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   z-index: 10500;
-  min-height: 8пше0px;
+  min-height: 80px;
   width: 100%;
   background: linear-gradient(180deg, #091923 20.66%, rgba(9, 25, 35, 0.76) 46.15%, rgba(9, 25, 35, 0) 94.69%);
   @media (max-width: 1600px) {
@@ -38,13 +38,16 @@
 
   .logo {
     position: absolute;
-    left: -62px;
+    left: 0;
     top: 11px;
     width: 76px;
     height: 68px;
     cursor: pointer;
     @media (max-width: 1600px) {
       left: 10px;
+    }
+    @media (max-width: 850px) {
+      top: 24px;
     }
     @media (max-width: 425px) {
       width: 60px;
