@@ -5,11 +5,11 @@ export const rowsInfo = [
   },
   {
     title: 'Attribute points (AP)',
-    desc: 'In this phase, characters resolve the effects of Actions (Attack hits Trick, Trick hits Defence, Defence hits Attack)',
+    desc: `Points are used to upgrade the character's equipment attributes (Head, Weapon, Toy, etc.). AP are claimed after character level up.`,
   },
   {
     title: 'Actions Phase',
-    desc: `Points are used to upgrade the character's equipment attributes (Head, Weapon, Toy, etc.). AP are claimed after character level up.`,
+    desc: 'In this phase, characters resolve the effects of Actions (Attack hits Trick, Trick hits Defence, Defence hits Attack)',
   },
 ];
 export const rowsInfoFull = [
@@ -19,7 +19,7 @@ export const rowsInfoFull = [
   },
   {
     title: 'Actions Phase',
-    desc: `Points are used to upgrade the character's equipment attributes (Head, Weapon, Toy, etc.). AP are claimed after character level up.`,
+    desc: `In this phase, characters resolve the effects of Actions (Attack hits Trick, Trick hits Defence, Defence hits Attack)`,
   },
   {
     title: 'AI Bot',
@@ -39,7 +39,7 @@ export const rowsInfoFull = [
   },
   {
     title: 'Attribute points (AP)',
-    desc: 'In this phase, characters resolve the effects of Actions (Attack hits Trick, Trick hits Defence, Defence hits Attack)',
+    desc: `Points are used to upgrade the character's equipment attributes (Head, Weapon, Toy, etc.). AP are claimed after character level up.`,
   },
   {
     title: 'Beansprout',

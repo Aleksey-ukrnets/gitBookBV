@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router';
 
 import css from '../../../styles/Lore/comics.module.scss';
 
-import arrow from '../../../assets/Lore/Comics/Arrow-left.svg';
+import {ReactComponent as Arrow} from '../../../assets/Lore/Comics/Arrow-left.svg';
 
 export default function BtnBack({ text,setTab }) {
   const navigate = useNavigate();
@@ -14,8 +14,8 @@ export default function BtnBack({ text,setTab }) {
   };
   return (
     <button className={css.btnBack} onClick={goBack}>
-      <div>
-        <img src={arrow} alt="arrow" />
+      <div className={css.btnContent}>
+        <Arrow className={css.svg} alt="arrow" />
         <p className={css.text}>{text}</p>
       </div>
     </button>

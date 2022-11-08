@@ -1,6 +1,6 @@
 import React from 'react';
 import css from '../styles/AboutPage/about.module.scss';
-import backImg from '../assets/aboutPage/background2.png';
+import backImg from '../assets/aboutPage/background.png';
 import BtnReadMore from '../components/buttons/BtnReadMore';
 import AboutCards from '../components/AboutPage/AboutCards';
 import Glossary from '../components/AboutPage/Glossary';

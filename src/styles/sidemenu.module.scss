@@ -14,19 +14,34 @@
         flex-direction: column;
         padding: 0 16px;
         margin: 370px 0 0 0;
-        
         .linkList{
-            
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            .svgLink path {
+                fill: #16242C;
+            }
             @media (max-width: '850px'){
                 display: none;
             }
         }
         .link {
             margin-top: 30px;
+            .svg {
+                * {
+                    transition: 0.3s all;
+                }
+                &:hover{
+                  *[stroke]{
+                    stroke: #FFFFFF;
+                  }
+                   *[fill]{
+                    fill: #FFFFFF;
+                   } 
+                }
+
+            }
             &:first-child {
                 margin: 0;
             }

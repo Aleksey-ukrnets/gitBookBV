@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {  useState } from 'react';
 import Dao from '../components/Docs/Dao';
 import Takenomics from '../components/Docs/Takenomics';
 import TabMenu from '../components/TabMenu';

@@ -71,5 +71,8 @@
       position: absolute;
       top: 120px;
     }
+    @media (max-width: 834px) {
+     width: 110%;
+    }
   }
 }

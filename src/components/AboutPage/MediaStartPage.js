@@ -1,7 +1,7 @@
 import React from 'react';
 import css from '../../styles/Lore/media.module.scss';
 import { mediumInfo } from '../Lore/textComponent/mediaInfo';
-import arrowRight from '../../assets/arrowRight.svg';
+import {ReactComponent as ArrowRight} from '../../assets/arrowRight.svg';
 import MediaCard from '../Lore/MediaCard';
 import { Link } from 'react-router-dom';
 
@@ -17,7 +17,7 @@ export default function MediaStartPage() {
             <Link to={'/lore/media'} className={css.text}>
               view more
             </Link>
-            <img src={arrowRight} alt="arrow" />
+            <ArrowRight className={css.svg} alt="arrow" />
           </div>
         </div>
         <div className={css.cardList}>

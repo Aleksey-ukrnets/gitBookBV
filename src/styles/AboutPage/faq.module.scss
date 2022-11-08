@@ -1,6 +1,6 @@
 .faqMain {
-  margin-top: 50px;
-  margin-bottom: 200px;
+  margin-top: 170px;
+  margin-bottom: 100px;
   .wrapper {
     position: relative;
     padding: 0 50px 0 0;
@@ -41,6 +41,9 @@
           transform: matrix(-0.99, 0.13, 0.13, 0.99, 0, 0);
           filter: blur(340px);
           top: 250px;
+          @media (max-width: 980px) {
+            top: 100px;
+          }
         }
         .littleIcon {
           position: absolute;
@@ -169,7 +172,10 @@
               justify-content: center;
               align-items: center;
               cursor: pointer;
-              @media (max-width: 425px) {
+              &:hover {
+                background: #13222A;
+              }
+              @media (max-width: 1024px) {
                 width: 24px;
                 height: 24px;
                 img {
@@ -191,9 +197,11 @@
               @media (max-width: 1024px) {
                 font-size: 16px;
                 line-height: 24px;
+                margin-left: 20px;
               }
               @media (max-width: 425px) {
                 font-size: 14px;
+              
               }
             }
           }

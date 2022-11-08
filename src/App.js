@@ -35,7 +35,7 @@ function App() {
           </Route>
 
           <Route path="/*" element={<ComingSoon />} />
-          <Route path="/comics" element={<Navigate to="/" />}></Route>
+          {/* <Route path="/comics" element={<Navigate to="/" />}></Route> */}
           <Route path="/lore" element={<Navigate to="/lore/Media" />} />
         </Routes>
       </MainWrapper>

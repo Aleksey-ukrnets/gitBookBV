@@ -48,7 +48,7 @@
     .row {
       display: flex;
       // background: rgba(255, 255, 255, 0.05);
-      @media (max-width: 550px) {
+      @media (max-width: 840px) {
         flex-direction: column;  
       }
       .firstCol {
@@ -56,8 +56,11 @@
         border: 1px solid #091923;
         border-left: none;
         border-bottom: none;
+        display: flex;
+        align-items: center;
+
         .text {
-          padding: 42px 30px;
+          padding: 0 0 0 32px;
           font-family: 'Changa One';
           font-style: italic;
           font-weight: 400;
@@ -69,17 +72,19 @@
           margin: 0;
           @media (max-width: 1024px) {
             font-size: 18px;
-            
+          }
+          @media (max-width: 840px) {
+            padding: 30px 10px 0 30px;
           }
           @media (max-width: 550px) {
-            padding: 22px 0 0 20px;
+            padding: 20px 10px 0 30px;
           }
         }
       }
       .secondCol {
         flex: 2;
         border-top: 1px solid #091923;
-        @media (max-width: 550px) {
+        @media (max-width: 840px) {
           border: none;
         }
         .text {
@@ -96,8 +101,8 @@
             font-size: 14px;
             line-height: 20px;
           }
-          @media (max-width: 550px) {
-            padding: 12px 60px 22px 20px;
+          @media (max-width: 840px) {
+            padding: 12px 60px 20px 30px;
           }
         }
       }
@@ -198,7 +203,13 @@
         }
         & img {
           z-index: 1;
-          @media (max-width: 1024px) {
+          width: 85%;
+          height: 95%;
+          margin: 50px 0 0 0;
+          @media (max-width: 880px) {
+            width: 70%;
+          }
+          @media (max-width: 425px) {
             width: 100%;
           }
         }

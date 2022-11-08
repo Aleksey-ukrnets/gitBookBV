@@ -1,15 +1,15 @@
 import React from 'react'
 import css from '../styles/sidemenu.module.scss'
-import telegram from '../assets/sideMenu/icon_telegram.svg'
-import twitter from '../assets/sideMenu/icon_twitter.svg'
-import linked from '../assets/sideMenu/linked.svg'
-import medium from '../assets/sideMenu/icon_medium.svg'
+import {ReactComponent as  TelegramIcon} from '../assets/sideMenu/icon_telegram.svg'
+import {ReactComponent as  TwitterIcon}  from '../assets/sideMenu/icon_twitter.svg'
+import {ReactComponent as  LinkedIcon } from '../assets/sideMenu/linked.svg'
+import {ReactComponent as  MediumIcon } from '../assets/sideMenu/icon_medium.svg'
 export default function SideMenu() {
 const links = [
-    {img: twitter,link: 'https://twitter.com/BattleVerse_io' },
-    {img: linked,link: 'https://ru.linkedin.com/company/battleverse-io?trk=ppro_cprof' },
-    {img: telegram,link: 'https://t.me/battleverse_news' },
-    {img: medium,link: 'https://battleverse.medium.com/' },
+    {Icon: TelegramIcon,link: 'https://twitter.com/BattleVerse_io' },
+    {Icon: TwitterIcon,link: 'https://ru.linkedin.com/company/battleverse-io?trk=ppro_cprof' },
+    {Icon: LinkedIcon,link: 'https://t.me/battleverse_news' },
+    {Icon: MediumIcon,link: 'https://battleverse.medium.com/' },
 ]
   return (
     <div className={css.main}>
@@ -19,7 +19,7 @@ const links = [
                 {links.map((el,index) => {
                     return(
                     <a key={index}href={el.link} target='_blank' rel='noreferrer' className={css.link}>
-                        <img src={el.img} alt="link" />
+                       {<el.Icon className={css.svg} />}
                     </a>)
                 })}
             </div>

@@ -4,15 +4,19 @@
   z-index: 10500;
   min-height: 80px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(180deg, #091923 20.66%, rgba(9, 25, 35, 0.76) 46.15%, rgba(9, 25, 35, 0) 94.69%);
-  @media (max-width: 1600px) {
-    max-width: none;
+  @media (max-width: 850px) {
+    justify-content: flex-start;;
   }
 
   .wrapperHeader {
     display: flex;
     width: 100%;
     justify-content: flex-end;
+    max-width: 1440px;
 
     @media (max-width: 850px) {
       display: none;
@@ -31,23 +35,26 @@
     top: 35px;
     right: 42px;
     cursor: pointer;
+    z-index: 1000;
     @media (max-width: 850px) {
       display: block;
     }
   }
 
   .logo {
-    position: absolute;
-    left: 0;
-    top: 11px;
+    margin-right: 56px;
+    margin-top: 11px;
     width: 76px;
     height: 68px;
     cursor: pointer;
+    z-index: 1000;
     @media (max-width: 1600px) {
-      left: 10px;
+     margin-left: 12px;
+     margin-right: 0;
     }
     @media (max-width: 850px) {
-      top: 24px;
+      position: absolute;
+      top: 10px;
     }
     @media (max-width: 425px) {
       width: 60px;

@@ -12,8 +12,8 @@ export default function ComicsPosts() {
 
   return (
     <div className={css.posts}>
-      <BtnBack text={'Seasons'} />
       <div className={cssnew.wrapper}>
+      <BtnBack text={'Seasons'} />
         <div className={cssnew.cardList}>
           {seasons[seasonId].map((el) => (
             <MediaCard info={el} key={el.value} comics />

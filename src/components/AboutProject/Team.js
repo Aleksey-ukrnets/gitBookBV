@@ -3,7 +3,7 @@ import TeamBack from '../../assets/AboutProject/team/Paricles.svg'
 import '../../styles/AboutProject/team.scss'
 import { team } from './textComponent/teamInfo'
 export default function Team() {
-  const [membs, setMembs] = useState(12)
+  const [membs] = useState(12)
   return (
    <div>
      <div className='team' id="Team">
@@ -27,12 +27,12 @@ export default function Team() {
           ))}
         </div>
       </div>
-       <button className={membs === 12 ? 'show_more_membs' : 'show_more_membs less'} onClick={() => membs === 12 ? setMembs(team.length) : setMembs(12)}
+       {/* <BtnReadMore purple className={membs === 12 ? 'show_more_membs' : 'show_more_membs less'} onClick={() => membs === 12 ? setMembs(team.length) : setMembs(12)}
       
      >
        {membs === 12 ?
        'Show more members'
-     : 'Show less members'}</button>
+     : 'Show less members'}</BtnReadMore> */}
    </div>
   )
 }

@@ -7,9 +7,14 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      
     }
     .annotation {
-      max-width: 500px;
+      max-width: 724px;
+      min-width: 724px;
+      @media (max-width: 880px) {
+        min-width: 0;
+      }
     }
     .title,
     .descName,
@@ -59,6 +64,11 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      @media (max-width: 880px) {
+        justify-content: flex-start;
+        align-items: inherit;
+  
+      }
       .title {
           font-family: 'Rubik';
           font-style: normal;

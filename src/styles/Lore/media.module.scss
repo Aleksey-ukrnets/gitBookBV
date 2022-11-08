@@ -38,20 +38,33 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      
+      * {
+        transition: 0.3s all;
+      }
+
+      &:hover {
+        .text {
+          color: #FFFFFF;
+        }
+        .svg {
+          *[stroke]{
+            stroke: #FFFFFF;
+          }
+      }
+      }
       .text {
         font-family: 'Changa One';
         font-style: italic;
         font-weight: 400;
-        font-size: 16.0099px;
+        font-size: 16px;
         line-height: 17px;
         text-align: center;
         text-transform: uppercase;
         color: #7b9bac;
         padding: 0;
         margin-right: 8px;
-        &:hover {
-
-        }
+       
       }
     }
   }
@@ -150,13 +163,13 @@
       .cardContent {
         position: relative;
         height: 100%;
-        height: 350px;
+        height: 300px;
         @media (max-width: 700px) {
           height: 250px;
         }
         img {
           height: 100%;
-          position: absolute;
+          object-fit: cover;
           width: 100%;
           border-radius: 20px;
         }
