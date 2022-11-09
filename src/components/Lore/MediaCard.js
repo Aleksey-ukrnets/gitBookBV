@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom';
 import { useWindowWidth } from '@react-hook/window-size';
 import css from '../../styles/Lore/media.module.scss';
 
-export default function MediaCard({ info, comics }) {
-  // console.log(info);
+export default function MediaCard({ info, comics,className }) {
+
   const onlyWidth = useWindowWidth();
 
 
@@ -14,6 +14,7 @@ export default function MediaCard({ info, comics }) {
         <img
           src={info.img}
           alt="img"
+          className={`${css.img} ${className}`}
           style={comics && { borderRadius: '0px' }}
         />
         <div className={css.cardTitleWrapper}>

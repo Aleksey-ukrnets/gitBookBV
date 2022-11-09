@@ -1,10 +1,8 @@
 import React from 'react';
-import css from '../../styles/Lore/media.module.scss';
+import css from '../../styles/AboutPage/mediaStartPage.module.scss';
 import { mediumInfo } from '../Lore/textComponent/mediaInfo';
-import {ReactComponent as ArrowRight} from '../../assets/arrowRight.svg';
-import MediaCard from '../Lore/MediaCard';
+import { ReactComponent as ArrowRight } from '../../assets/arrowRight.svg';
 import { Link } from 'react-router-dom';
-
 export default function MediaStartPage() {
   const lastPosts = mediumInfo.slice(mediumInfo.length - 3, mediumInfo.length);
   console.log(lastPosts);
@@ -22,7 +20,21 @@ export default function MediaStartPage() {
         </div>
         <div className={css.cardList}>
           {lastPosts.map((el) => {
-            return <MediaCard info={el} key={el.link} />;
+            return (
+              <div className={css.card} key={el.img}>
+                <div className={css.cardContent}>
+                  <img src={el.img} alt="img" className={css.img} />
+                  <div className={css.cardTitleWrapper}>
+                    <h1 className={css.cardTitle}>{el.text}</h1>
+                  </div>
+                </div>
+                <div className={css.btn}>
+                  <Link to={`/${el.link}`} className={css.link}>
+                    see more
+                  </Link>
+                </div>
+              </div>
+            );
           })}
         </div>
       </div>

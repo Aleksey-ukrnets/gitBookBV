@@ -5,11 +5,12 @@ import BtnReadMore from '../buttons/BtnReadMore';
 
 import { rowsInfo } from '../GlossaryInfo/info';
 import GlossaryRows from '../GlossaryInfo/GlossaryRows';
-
+import {ReactComponent as Effect} from '../../assets/effect.svg'
 export default function Glossary() {
   return (
     <section className={css.glossary}>
       <div className={css.content}>
+        {/* <Effect className={css.svg} alt='effect' /> */}
         <div className={css.infoBlock}>
           <h1 className={css.title}>Batteverse glossary</h1>
           <GlossaryRows rowsInfo={rowsInfo} />

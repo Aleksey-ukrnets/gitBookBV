@@ -39,7 +39,7 @@
           transition: 1s all;
           background: #c13eff;
           transform: matrix(-0.99, 0.13, 0.13, 0.99, 0, 0);
-          filter: blur(340px);
+          filter: blur(150px);
           top: 250px;
           @media (max-width: 980px) {
             top: 100px;

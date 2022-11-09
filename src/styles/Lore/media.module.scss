@@ -1,6 +1,7 @@
 .media {
   margin-top: 36px;
 }
+
 .mediaMainPage{
   max-width: 1290px;
   margin-top: 170px;
@@ -117,6 +118,7 @@
           rgba(0, 0, 0, 0.67) 67.08%,
           rgba(0, 0, 0, 0.76) 94.57%
         );
+        border-radius: 0 0 20px 20px;
       }
       .cardTitle {
         font-family: 'Rubik';
@@ -167,12 +169,18 @@
         @media (max-width: 700px) {
           height: 250px;
         }
-        img {
+        .img {
           height: 100%;
           object-fit: cover;
           width: 100%;
           border-radius: 20px;
         }
+        //from MediaStartPage
+        .newImg{
+          width: 400px;
+          height: 300px;
+        }
+        //
       }
     }
   }
