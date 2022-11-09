@@ -6,8 +6,8 @@ import combat from '../../assets/gameplay/combat.png';
 import { infoGameMode } from './textComponent/infoAnnotaton';
 import AnnotationGameMode from './textComponent/AnnotationGameMode';
 
-import first from '../../assets/gameplay/arena.png'
-import second from '../../assets/gameplay/journey.png'
+// import first from '../../assets/gameplay/arena.png'
+// import second from '../../assets/gameplay/journey.png'
 // import third from '../../assets/gameplay/racing.png'
 // const imgs = [
 //   {img: first},

@@ -44,6 +44,10 @@
     @media (max-width: 425px) {
       padding: 0 20px;
     }
+    // .active {
+    //   background: red;
+    //   color: red;
+    // }
     .tab {
       font-family: 'Rubik';
       font-style: normal;
@@ -57,6 +61,7 @@
       &:hover {
         color: #ffffff;
       }
+      
       @media (max-width: 425px) {
         padding: 20px;
         font-size: 14px;

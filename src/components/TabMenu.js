@@ -1,9 +1,14 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import css from '../styles/tabMenu.module.scss';
 import BtnGoBack from './buttons/BtnGoBack';
 export default function TabMenu({ tabInfo, setTab, tab, lore }) {
   const wrapToLink = (jsx, to) => (lore ? <NavLink key={to} to={to}>{jsx}</NavLink> : jsx);
-
+  
+  const location = useLocation()
+  const pathLore = location.pathname.replace('/lore/', '')
+  // const pathComics = location.pathname.replace('/lore/', '')
+  // console.log(pathComics)
+  const isLore = (el) => el.title === pathLore 
   return (
     <section className={css.tabContainer}>
       <div className={css.blockTitle}>
@@ -17,11 +22,12 @@ export default function TabMenu({ tabInfo, setTab, tab, lore }) {
               className={css.tab}
               onClick={() => setTab(index)}
               style={{
-                color: tab === index && '#FFFFFF',
-                borderBottom: tab === index && '1px solid white',
+                color: lore ? isLore(el) && '#FFFFFF' : tab === index && '#FFFFFF',
+                borderBottom: lore ? isLore(el) && '1px solid white' : tab === index && '1px solid white',
               }}
               key={index}
             >
+             
               {el.title}
             </div>,
             el.title
