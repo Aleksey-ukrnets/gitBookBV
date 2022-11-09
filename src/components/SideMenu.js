@@ -4,12 +4,15 @@ import {ReactComponent as  TelegramIcon} from '../assets/sideMenu/icon_telegram.
 import {ReactComponent as  TwitterIcon}  from '../assets/sideMenu/icon_twitter.svg'
 import {ReactComponent as  LinkedIcon } from '../assets/sideMenu/linked.svg'
 import {ReactComponent as  MediumIcon } from '../assets/sideMenu/icon_medium.svg'
+import {ReactComponent as  DiscordIcon } from '../assets/sideMenu/discordNew.svg'
 export default function SideMenu() {
 const links = [
+    {Icon: DiscordIcon,link: 'https://battleverse.medium.com/' },
     {Icon: TelegramIcon,link: 'https://twitter.com/BattleVerse_io' },
     {Icon: TwitterIcon,link: 'https://ru.linkedin.com/company/battleverse-io?trk=ppro_cprof' },
     {Icon: LinkedIcon,link: 'https://t.me/battleverse_news' },
     {Icon: MediumIcon,link: 'https://battleverse.medium.com/' },
+    
 ]
   return (
     <div className={css.main}>

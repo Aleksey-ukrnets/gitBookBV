@@ -10,7 +10,7 @@ export default function Glossary() {
   return (
     <section className={css.glossary}>
       <div className={css.content}>
-        {/* <Effect className={css.svg} alt='effect' /> */}
+        <Effect className={css.svg} alt='effect' />
         <div className={css.infoBlock}>
           <h1 className={css.title}>Batteverse glossary</h1>
           <GlossaryRows rowsInfo={rowsInfo} />

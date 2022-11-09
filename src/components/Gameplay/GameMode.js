@@ -6,6 +6,15 @@ import combat from '../../assets/gameplay/combat.png';
 import { infoGameMode } from './textComponent/infoAnnotaton';
 import AnnotationGameMode from './textComponent/AnnotationGameMode';
 
+import first from '../../assets/gameplay/arena.png'
+import second from '../../assets/gameplay/journey.png'
+// import third from '../../assets/gameplay/racing.png'
+// const imgs = [
+//   {img: first},
+//   {img: second},
+//   {img: third }
+// ]
+
 export default function GameMode() {
   return (
     <div className={css.gameMode}>
@@ -30,10 +39,21 @@ export default function GameMode() {
               other gamers in racing PvP mode. This game mode is in progress.
             </p>
             <h4 className={css.descName}>The Maze of Trials</h4>
+            <div>
+              {/* {imgs.map(el => {
+                return(
+                 <div key={el.img}>
+                   <img src={el.img} alt='img' />
+                 </div>
+                )
+                  
+              
+              })} */}
+            </div>
             <p className={css.desc}>
               Journey to planets of the Battleverse where your characters will
               explore dungeons, secret laboratories and ancient ruins. Every
-              step may be the last, but the rewards are worth it. .
+              step may be the last, but the rewards are worth it.
             </p>
           </div>
         </div>

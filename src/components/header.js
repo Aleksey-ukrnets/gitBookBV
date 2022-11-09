@@ -83,9 +83,9 @@ export default function Header() {
         <footer className={css.footerBurger}>
           {footerShare.map((el, index) => {
             return (
-              <Link key={index} to={'/'} className={css.link}>
+              <a key={index} href={el.link} rel='noreferrer' className={css.link}>
                 <img src={el.img} alt="link" />
-              </Link>
+              </a>
             );
           })}
         </footer>
