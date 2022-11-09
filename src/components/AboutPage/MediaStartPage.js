@@ -29,9 +29,14 @@ export default function MediaStartPage() {
                   </div>
                 </div>
                 <div className={css.btn}>
-                  <Link to={`/${el.link}`} className={css.link}>
-                    see more
-                  </Link>
+                  <a
+                    className={css.link}
+                    href={`${el.link}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    read more
+                  </a>
                 </div>
               </div>
             );
