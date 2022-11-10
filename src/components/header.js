@@ -35,8 +35,7 @@ export default function Header() {
   const location = useLocation();
   const navigate = useNavigate();
   const navMain = () => navigate('/');
- 
-  
+
   useEffect(() => {
     let html = document.getElementsByTagName('html')[0].style;
     if (active) {
@@ -44,50 +43,62 @@ export default function Header() {
     } else {
       html.overflow = 'visible';
     }
-    
   }, [active]);
-  const pathLore = location.pathname.split('/').filter(el => el === 'lore').join('')
-  console.log(pathLore)
-  const setClassActive = (el) => location.pathname.replace('/', '') === el.link || el.title === pathLore
-  
+  const pathLore = location.pathname
+    .split('/')
+    .filter((el) => el === 'lore')
+    .join('');
+  console.log(pathLore);
+  const setClassActive = (el) =>
+    location.pathname.replace('/', '') === el.link || el.title === pathLore;
 
   return (
-    <header className={css.header}>
-      <img onClick={navMain} className={css.logo} src={logo} alt="logoBV" />
-      <img
-        className={css.burger}
-        onClick={() => setActive((prev) => !prev)}
-        src={active ? cross : burger}
-        alt="icon"
-      />
-      <div
-        className={css.wrapperHeader}
-        style={
-          active
-            ? { display: 'flex', background: '#091923' }
-            : { background: 'transparent' }
-        }
-      >
-        <div className={css.content}>
-          {links.map((el, index) => {
-            return (
-              <Link
-                to={el.link}
-                key={index}
-                onClick={() => setActive(false)}
-                className={`${css.link} ${
-                  setClassActive(el) && css.active
-                }`}
-              >
-                {el.title}
-              </Link>
-            );
-          })}
+    <header className={`${css.header} ${active && css.active}`}>
+      <div className={css.wrapper}>
+        <div className={active && css.burgerImgContainer}>
+          <img onClick={navMain} className={css.logo} src={logo} alt="logoBV" />
+          <img
+            className={css.burger}
+            onClick={() => setActive((prev) => !prev)}
+            src={active ? cross : burger}
+            alt="icon"
+          />
         </div>
-        <footer className={css.footerBurger}>
+        <div
+          className={css.wrapperHeader}
+          style={
+            active
+              ? { display: 'flex', background: '#091923' }
+              : { background: 'transparent' }
+          }
+        >
+          <div className={css.content}>
+            {links.map((el, index) => {
+              return (
+                <Link
+                  to={el.link}
+                  key={index}
+                  onClick={() => setActive(false)}
+                  className={`${css.link} ${setClassActive(el) && css.active}`}
+                >
+                  {el.title}
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+        <footer
+          className={`${css.footerBurger} ${active && css.active}`}
+          style={{ display: active ? 'flex' : 'none' }}
+        >
           {footerShare.map((el, index) => {
             return (
-              <a key={index} href={el.link} rel='noreferrer' className={css.link}>
+              <a
+                key={index}
+                href={el.link}
+                rel="noreferrer"
+                className={css.link}
+              >
                 <img src={el.img} alt="link" />
               </a>
             );
