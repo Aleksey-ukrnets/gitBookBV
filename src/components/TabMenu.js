@@ -6,9 +6,8 @@ export default function TabMenu({ tabInfo, setTab, tab, lore }) {
   
   const location = useLocation()
   const pathLore = location.pathname.replace('/lore/', '')
-  // const pathComics = location.pathname.replace('/lore/', '')
-  // console.log(pathComics)
-  const isLore = (el) => el.title === pathLore 
+  const pathComics = location.pathname.split('/').filter(el => el === 'comics').join('')
+  const isLore = (el) => el.title === pathLore || el.title === pathComics
   return (
     <section className={css.tabContainer}>
       <div className={css.blockTitle}>
@@ -22,7 +21,7 @@ export default function TabMenu({ tabInfo, setTab, tab, lore }) {
               className={css.tab}
               onClick={() => setTab(index)}
               style={{
-                color: lore ? isLore(el) && '#FFFFFF' : tab === index && '#FFFFFF',
+                color: lore || pathComics ? isLore(el) && '#FFFFFF':  tab === index && '#FFFFFF',
                 borderBottom: lore ? isLore(el) && '1px solid white' : tab === index && '1px solid white',
               }}
               key={index}

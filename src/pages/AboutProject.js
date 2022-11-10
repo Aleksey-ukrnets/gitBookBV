@@ -6,7 +6,7 @@ import Team from '../components/AboutProject/Team';
 import { useScrollTop } from '../Hooks/useScrollTop';
 const tabInfo = {
   title: 'About the project',
-  tabs: [{ title: 'Intro' }, { title: 'Team' }],
+  tabs: [{ title: 'intro' }, { title: 'team' }],
 };
 
 export default function AboutProject() {

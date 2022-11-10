@@ -4,6 +4,7 @@ import rebootIcon from '../../../assets/gameplay/rebootIcon.png';
 import focusIcon from '../../../assets/gameplay/focusIcon.png';
 import gameCycle from '../../../assets/gameplay/gameCycle.png';
 import craft from '../../../assets/gameplay/craft.png';
+import craftNew from '../../../assets/gameplay/craftPng.png';
 
 export const infoAnnotation = {
   worldTitle: {
@@ -80,6 +81,6 @@ export const infoGameMode = {
     craftCycleTitle: {
       title: 'Craft cycle',
       text: 'Every race (Bot or Shroom) has special abilities. These abilities help your character to win in PvP or PvE battles. Bots or Shrooms have two unique skills per race.',
-      img: craft
+      img: craftNew
     }
 }

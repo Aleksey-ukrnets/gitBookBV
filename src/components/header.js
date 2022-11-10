@@ -13,27 +13,30 @@ import linked from '../assets/linked.svg';
 import medium from '../assets/icon_medium.svg';
 import discord from '../assets/sideMenu/discord.svg';
 
+const links = [
+  { title: 'about', link: 'about' },
+  { title: 'gameplay', link: 'gameplay' },
+  { title: 'lore', link: 'lore/media' },
+  { title: 'docs', link: 'docs' },
+];
+const footerShare = [
+  { img: twitter, link: 'https://twitter.com/BattleVerse_io' },
+  {
+    img: linked,
+    link: 'https://ru.linkedin.com/company/battleverse-io?trk=ppro_cprof',
+  },
+  { img: telegram, link: 'https://t.me/battleverse_news' },
+  { img: medium, link: 'https://battleverse.medium.com/' },
+  { img: discord, link: 'https://discord.com/invite/HFVAnBS9qA' },
+];
+
 export default function Header() {
   const [active, setActive] = useState(false);
-  const links = [
-    { title: 'about', link: 'about' },
-    { title: 'gameplay', link: 'gameplay' },
-    { title: 'lore', link: 'lore/media' },
-    { title: 'docs', link: 'docs' },
-    // { title: 'FAQ', link: 'FAQ' },
-  ];
-  const footerShare = [
-    { img: twitter, link: 'https://twitter.com/BattleVerse_io' },
-    {
-      img: linked,
-      link: 'https://ru.linkedin.com/company/battleverse-io?trk=ppro_cprof',
-    },
-    { img: telegram, link: 'https://t.me/battleverse_news' },
-    { img: medium, link: 'https://battleverse.medium.com/' },
-    { img: discord, link: 'https://discord.com/invite/HFVAnBS9qA' },
-  ];
-
   const location = useLocation();
+  const navigate = useNavigate();
+  const navMain = () => navigate('/');
+ 
+  
   useEffect(() => {
     let html = document.getElementsByTagName('html')[0].style;
     if (active) {
@@ -41,11 +44,12 @@ export default function Header() {
     } else {
       html.overflow = 'visible';
     }
-    console.log(active);
+    
   }, [active]);
-
-  const navigate = useNavigate();
-  const navMain = () => navigate('/');
+  const pathLore = location.pathname.split('/').filter(el => el === 'lore').join('')
+  console.log(pathLore)
+  const setClassActive = (el) => location.pathname.replace('/', '') === el.link || el.title === pathLore
+  
 
   return (
     <header className={css.header}>
@@ -72,7 +76,7 @@ export default function Header() {
                 key={index}
                 onClick={() => setActive(false)}
                 className={`${css.link} ${
-                  location.pathname.replace('/', '') === el.link && css.active
+                  setClassActive(el) && css.active
                 }`}
               >
                 {el.title}

@@ -5,8 +5,9 @@ import BtnReadMore from '../components/buttons/BtnReadMore';
 import AboutCards from '../components/AboutPage/AboutCards';
 import Glossary from '../components/AboutPage/Glossary';
 import Docs from '../components/AboutPage/Docs';
-import Faq from '../components/AboutPage/FAQ/Faq'
+import Faq from '../components/AboutPage/FAQ/Faq';
 import MediaStartPage from '../components/AboutPage/MediaStartPage';
+import Roadmap from '../components/AboutPage/Roadmap/Roadmap';
 export default function Main() {
   return (
     <section>
@@ -27,6 +28,7 @@ export default function Main() {
       <MediaStartPage />
       <Glossary />
       <Docs />
+      <Roadmap />
       <Faq />
     </section>
   );

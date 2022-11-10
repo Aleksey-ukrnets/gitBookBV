@@ -7,7 +7,7 @@ import { useScrollTop } from '../Hooks/useScrollTop';
 
 const tabInfo = {
   title: 'Lore',
-  tabs: [{ title: 'Media' }, { title: 'Glossary' }, { title: 'Comics' }],
+  tabs: [{ title: 'media' }, { title: 'glossary' }, { title: 'comics' }],
 };
 
 export default function Lore() {

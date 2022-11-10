@@ -6,7 +6,7 @@ import { useScrollTop } from '../Hooks/useScrollTop';
 import css from '../styles/Gameplay/gameplay.module.scss';
 const tabInfo = {
   title: 'gameplay',
-  tabs: [{ title: 'Characters' }, { title: 'Game modes' }],
+  tabs: [{ title: 'characters' }, { title: 'game modes' }],
 };
 
 export default function Gameplay() {

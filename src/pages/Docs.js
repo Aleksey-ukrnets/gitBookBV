@@ -6,7 +6,7 @@ import css from '../styles/Docs/docsMain.module.scss';
 import { useScrollTop } from '../Hooks/useScrollTop';
 const tabInfo = {
   title: 'docs',
-  tabs: [{ title: 'Tokenomics' }, { title: 'DAO' }],
+  tabs: [{ title: 'tokenomics' }, { title: 'dao' }],
 };
 
 export default function Docs() {
