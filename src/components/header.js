@@ -55,7 +55,7 @@ export default function Header() {
   return (
     <header className={`${css.header} ${active && css.active}`}>
       <div className={css.wrapper}>
-        <div className={active && css.burgerImgContainer}>
+        <div className={css.burgerImgContainer}>
           <img onClick={navMain} className={css.logo} src={logo} alt="logoBV" />
           <img
             className={css.burger}
