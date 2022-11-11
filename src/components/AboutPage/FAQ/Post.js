@@ -13,9 +13,9 @@ export default function Post({ post, clicked, index, toggle }) {
           <div className={css.question} >{post.question}</div>
         </div>
         {clicked === index && (
-          <div className={css.answer}>
+          <div  className={css.answer}>
             <div className={css.empty}></div>
-            <div className={css.answerText}>{post.answer}</div>
+            <div dangerouslySetInnerHTML={{__html: post.answer}} className={css.answerText} />
             {/* <a href='/' rel='norefferer' className={css.answerText}>{post.answer}</a> */}
           </div>
         )}
