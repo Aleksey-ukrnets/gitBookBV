@@ -17,7 +17,7 @@ export default function MediaCard({ info, comics,className }) {
           className={`${css.img} ${className}`}
           style={comics && { borderRadius: '0px' }}
         />
-        <div className={css.cardTitleWrapper}>
+        <div className={css.cardTitleWrapper} style={{borderRadius: comics && '0'}} >
           <h1 className={css.cardTitle}>{info.text}</h1>
         </div>
       </div>
