@@ -13,13 +13,11 @@ export const posts = [
   },
   {
     question: 'How to mint a Shroom?',
-    answer:
-      `Click the <a href='https://game.battleverse.io/marketplace/nftcharacters' target='_blank' rel='noreferrer'>“Mint”</a> button on the Battleverse <a href='https://battleverse.io' target='_blank' rel='noreferrer'>main page</a>, which will take you to the page about the Shroom race, generations, etc. Please, read the info before minting a Shroom. Click the “Mint now” button after that. On the Shroom mint page click the “Connect Wallet” button and choose your Metamask wallet. After that, you can mint a Shroom for BNB, ETH, etc.`,
+    answer: `Click the <a href='https://game.battleverse.io/marketplace/nftcharacters' target='_blank' rel='noreferrer'>“Mint”</a> button on the Battleverse <a href='https://battleverse.io' target='_blank' rel='noreferrer'>main page</a>, which will take you to the page about the Shroom race, generations, etc. Please, read the info before minting a Shroom. Click the “Mint now” button after that. On the Shroom mint page click the “Connect Wallet” button and choose your Metamask wallet. After that, you can mint a Shroom for BNB, ETH, etc.`,
   },
   {
     question: 'How to buy a Bot?',
-    answer:
-      `Click the “Marketplace”  button on the Battleverse <a href='https://battleverse.io' target='_blank' rel='noreferrer'>main page</a>, which will take you to Battleverse Marketplace. Here you can Buy a Bot or other NFT characters or any other in-game stuff.`,
+    answer: `Click the “Marketplace”  button on the Battleverse <a href='https://battleverse.io' target='_blank' rel='noreferrer'>main page</a>, which will take you to Battleverse Marketplace. Here you can Buy a Bot or other NFT characters or any other in-game stuff.`,
   },
   {
     question: 'Battleverse coin BVC - where can I get it?',
@@ -28,7 +26,6 @@ export const posts = [
   {
     question:
       'I connected to Metamask Wallet, got a character, and had some BVC. What am I supposed to do now?',
-    answer:
-      `On the Battleverse <a href='https://battleverse.io' target='_blank' rel='noreferrer'>main page</a> click the “Play” button, connect your Metamask wallet to the game, and start your first onboarding session!`,
+    answer: `On the Battleverse <a href='https://battleverse.io' target='_blank' rel='noreferrer'>main page</a> click the “Play” button, connect your Metamask wallet to the game, and start your first onboarding session!`,
   },
 ];

@@ -7,7 +7,7 @@ import Glossary from '../components/AboutPage/Glossary';
 import Docs from '../components/AboutPage/Docs';
 import Faq from '../components/AboutPage/FAQ/Faq';
 import MediaStartPage from '../components/AboutPage/MediaStartPage';
-import Roadmap from '../components/AboutPage/Roadmap/Roadmap';
+// import Roadmap from '../components/AboutPage/Roadmap/Roadmap';
 export default function Main() {
   return (
     <section>
@@ -28,7 +28,7 @@ export default function Main() {
       <MediaStartPage />
       <Glossary />
       <Docs />
-      <Roadmap />
+      {/* <Roadmap /> */}
       <Faq />
     </section>
   );
