@@ -34,7 +34,7 @@ export default function ComicsPost() {
   const el = innerComics[seasonId].find(
     (episode) => episode.link.toLowerCase() === episodeId.toLowerCase()
   );
-  // debugger;
+  
   
   return ( 
     <>
